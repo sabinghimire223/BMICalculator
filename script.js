@@ -16,16 +16,17 @@ form.addEventListener("submit", function (event) {
   } else {
     const height_meter = height / 100;
     const bmi = (weight / (height_meter * height_meter)).toFixed(2);
-    const result = document.getElementById("results");
+    const result_number = document.getElementById("number_result");
+    const result_text = document.getElementById("text_result");
     if (bmi < 18.6) {
-      result.innerHTML = "UnderWeight";
-      result.innerHTML = `<span>BMI is :${bmi}</span>`;
+      result_text.innerHTML = `<span>UnderWeight </span>`;
+      result_number.innerHTML = `<span>BMI is :${bmi}</span>`;
     } else if (bmi > 18.6 && bmi < 24.9) {
-      result.innerHTML = "Normal Weight";
-      result.innerHTML = `<span>BMI is :${bmi}</span>`;
+      result_text.innerHTML = `<span>Normal Weight </span>`;
+      result_number.innerHTML = `<span>BMI is :${bmi}</span>`;
     } else if (bmi > 24.9) {
-      result.innerHTML = "Overweight";
-      result.innerHTML = `<span>BMI is :${bmi}</span>`;
+      result_text.innerHTML = `<span>Overweight</span>`;
+      result_number.innerHTML = `<span>BMI is :${bmi}</span>`;
     }
   }
 });
