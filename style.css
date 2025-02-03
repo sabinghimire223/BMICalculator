@@ -1,0 +1,57 @@
+body {
+  width: 100vw !important;
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a7a7a7;
+}
+.form {
+  border: 2px solid #000000;
+  padding: 1rem;
+  border-radius: 10px;
+}
+#height,
+#weight {
+  width: 150px;
+  height: 25px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#weight-guide {
+  margin-left: 75px;
+  margin-top: 25px;
+}
+
+#results {
+  font-size: 35px;
+  margin-left: 90px;
+  margin-top: 20px;
+  color: rgb(241, 241, 241);
+}
+
+button {
+  width: 150px;
+  height: 35px;
+  margin-left: 90px;
+  margin-top: 25px;
+  background-color: #fff;
+  padding: 1px 30px;
+  border-radius: 8px;
+  color: #212121;
+  text-decoration: none;
+  border: 2px solid #212121;
+
+  font-size: 25px;
+}
+h1 {
+  padding-left: 15px;
+  padding-top: 25px;
+}
